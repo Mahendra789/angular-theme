@@ -3,11 +3,10 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 mat-toolbar {
-    height: 60px !important;
+    height: 60px;
     position: fixed;
     left: 0;
-    width: 100% !important;
-    padding: 0 !important;
+    width: 100%;
 
     mat-icon{
         color: #fff;
@@ -57,7 +56,7 @@ mat-toolbar {
     height: 100%;
     height: calc(100% - 48px);
     overflow: auto;
-    width: 60px;
+    width: 50px;
     transition: .2s ease-in-out;
     z-index: 1;
 
@@ -69,12 +68,12 @@ mat-toolbar {
        li {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 9px;
         transition: 0.3s ease-in-out;
         cursor: pointer;
 
             mat-icon {
-                margin-right: 15px;
+                margin-right: 10px;
                 font-weight: 600;
                 border-radius: 50%;
                 padding: 7px;
@@ -99,21 +98,3 @@ mat-toolbar {
 }
 
 
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #185b69;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #185b69
-  }

@@ -1,0 +1,62 @@
+@import '~@angular/material/theming';
+@import './mixin.scss';
+
+@include mat-core();
+
+$my-primary: (
+    50: #ffffff,
+    100: #2593A6,
+    200: #0898b17a,
+    300: #007D94,
+    400: #1e6b7a,
+    500: #185B69,
+    600: #2a5661,
+    700: #244A54,
+    800: #374550,
+    900: #30383E,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+    )
+);
+
+$my-accent: (
+    50: #ffffff,
+    100: #4683A3,
+    200: #fecdbd,
+    300: #0966D7,
+    400: #649F56,
+    500: #EFA00B,
+    600: #E45932,
+    700: #D81159,
+    800: #3f3c3c,
+    900: #333333,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+    )
+);
+
+$my-custom-primary: mat-palette($my-primary);
+$my-custom-accent: mat-palette($my-accent);
+
+$my-custom-theme: mat-light-theme($my-custom-primary, $my-custom-accent);
+
+@include theme-color-grabber($my-custom-theme);
+@include angular-material-theme($my-custom-theme);
